@@ -69,10 +69,9 @@ The target variable is `bad_flag`.
 
 ### Class Distribution
 
-  Class   Meaning     Accounts   Proportion
-  ------- --------- ---------- ------------
- - 0       Good          95,434       98.58%
- - 1       Bad            1,372        1.42%
+  Class  Meaning     Accounts   Proportion
+ - 0           Good               95,434            98.58%
+ - 1           Bad                 1,372             1.42%
 
 This represents a significant class imbalance, making appropriate
 evaluation and class-weighting strategies particularly important.
