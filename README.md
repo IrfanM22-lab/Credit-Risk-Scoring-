@@ -69,8 +69,8 @@ The target variable is `bad_flag`.
 
 ### Class Distribution
 
- | Class | Meaning    | Accounts|   Proportion|
- -------------------------------------------------------------
+ | Class | Meaning    | Accounts|                  Proportion|
+ |:-------------------------------------------------------------: |
  |0      |     Good    |           95,434  |          98.58% |
  | 1     |      Bad    |            1,372  |           1.42%  |
 
