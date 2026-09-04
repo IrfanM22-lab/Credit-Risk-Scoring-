@@ -71,8 +71,8 @@ The target variable is `bad_flag`.
 
   Class   Meaning     Accounts   Proportion
   ------- --------- ---------- ------------
-  0       Good          95,434       98.58%
-  1       Bad            1,372        1.42%
+ - 0       Good          95,434       98.58%
+ - 1       Bad            1,372        1.42%
 
 This represents a significant class imbalance, making appropriate
 evaluation and class-weighting strategies particularly important.
@@ -173,17 +173,38 @@ three models tested.
 
 The models were evaluated on the held-out test set.
 
-  ----------------------------------------------------------------------------------
-  Model            ROC-AUC      PR-AUC   Precision     Recall          F1   Accuracy
-  ------------ ----------- ----------- ----------- ---------- ----------- ----------
-  Logistic           0.771       0.049       0.045      0.657       0.085      0.799
-  Regression                                                              
+     
+  ROC-AUC    
+  - Logistic Regression          **0.771**                                                                
+ - Random Forest              **0.818**                                                                        
+ - XGBoost         **0.836**  
+ 
+  PR-AUC 
+  - Logistic Regression                 **0.049**                                                             
+ - Random Forest                   **0.067**                                                                        
+ - XGBoost          **0.083**  
+  
+  Precision   
+  - Logistic Regression         **0.045**                                                               
+ - Random Forest             **0.052**                                                                        
+ - XGBoost           **0.058**     
+  
+  Recall   
+  - Logistic Regression       **0.657**                                                                
+ - Random Forest          **0.602**                                                                        
+ - XGBoost            **0.613**   
+  
+  F1  
+  - Logistic Regression       **0.085**                                                               
+ - Random Forest        **0.095**                                                                      
+ - XGBoost      **0.106**    
+  
+  Accuracy
 
-  Random             0.818       0.067       0.052      0.602       0.095      0.838
-  Forest                                                                  
+ - Logistic Regression          **0.799**                                                            
+ - Random Forest              **0.838**                                                                    
+ - XGBoost          **0.854**
 
-  XGBoost        **0.836**   **0.083**   **0.058**      0.613   **0.106**      0.854
-  ----------------------------------------------------------------------------------
 
 ### Key Finding
 
